@@ -4,245 +4,179 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
+	<title>Sergey Hayrapetyan - Portfolio</title>
 	<link rel="stylesheet" href="style.css" />
+	<!-- Consider adding a favicon -->
+	<!-- <link rel="icon" href="bilder/favicon.ico" type="image/x-icon"> -->
 </head>
-<!-- ----------------NAVBAR--------------------------------------------------------------------------------------------------------------------------------- -->
 
 <body>
-	<div class="container-web">
-		<div class="nav-container">
-			<nav class="div-nav">
-				<ul>
-					<li class="list-item"><a href="#hero-me" class="active1 active6">Home</a></li>
-					<li class="list-item"><a href="#about" class="active2 active6">About</a></li>
-					<li class="list-item"><a href="#Projects" class="active3 active6">Projects</a></li>
-					<li class="list-item"><a href="#ref" class="active5 active6">Referencer</a></li>
-					<li class="list-item"><a href="#Contact" class="active5 active6">Contact</a></li>
+	<header class="site-header">
+		<div class="container">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#hero" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+					<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 				</ul>
 			</nav>
-
 		</div>
+	</header>
 
-		<!-- ----------------NAVBAR_END--------------------------------------------------------------------------------------------------------------------------------- -->
-
-
-		<!-- ----------------HERO_SECTION--------------------------------------------------------------------------------------------------------------------------------- -->
-		<div class="container1" id="hero-me">
-			<div class="hero-me">
-				<img src="bilder/Sergey.jpg" id="pic-me">
-			</div>
-			<div class="hero-me-text">
-				<h1 id="name-me">Sergey Hayrapetyan</h1>
-				<p id="welcome-me">Välkommen till min sida</p>
-				<div class="div-btn">
-					<button class="btn-cv"><a class="download-cv" href="CV.AI.pdf" download="" target="_blank">Ladda
-							ner mitt CV</a></a></button>
-					<button class="btn-contact btn-cv"><a href="#firstname" class="download-cv">Kontakta
-							mig</a></button>
+	<main>
+		<section id="hero" class="hero">
+			<div class="container">
+				<div class="hero__content">
+					<img src="bilder/Sergey.jpg" alt="Sergey Hayrapetyan" class="hero__image">
+					<div class="hero__text-content">
+						<h1 class="hero__title">Sergey Hayrapetyan</h1>
+						<p class="hero__subtitle">Välkommen till min sida</p>
+						<div class="hero__actions">
+							<a href="CV.AI.pdf" download target="_blank" class="btn">Ladda ner mitt CV</a>
+							<a href="#contact" class="btn btn--outline">Kontakta mig</a>
+						</div>
+					</div>
 				</div>
 			</div>
+		</section>
 
-		</div>
-		<!-- ----------------HERO_SECTION_END--------------------------------------------------------------------------------------------------------------------------------- -->
-
-		<!-------------------About----------------------------------------------------------------------------------------------------------------------------------->
-		<div class="container-about1" id="about">
-			<div class="about-me-h1">
-				<h1 class="h1-about">Om mig</h1>
-				<p class="about-p">Jag är en mycket social person med en vänlig och trevlig inställning. Att interagera
-					med människor är något som jag verkligen njuter av, och jag har en naturlig förmåga att skapa
-					positiva och meningsfulla relationer.
-
-					Min trevlighet och sociala natur gör mig till en person som är enkel att jobba med och som trivs i
-					teammiljöer. Jag anser att en bra atmosfär är nyckeln till ett framgångsrikt samarbete och jag
-					strävar alltid efter att bidra till en positiv och inkluderande arbetsmiljö.
-				</p>
+		<section id="about" class="section"></section>
+			<div class="container">
+				<h2 class="section-title">Om Mig & Erfarenhet</h2>
+				<div class="about-grid">
+					<article class="info-block">
+						<h3>Om mig</h3>
+						<p>Jag är en utåtriktad och social person med en genuint positiv inställning. Att bygga relationer och interagera med människor är något jag värdesätter högt, och jag har en naturlig fallenhet för att skapa meningsfulla kontakter. Min sociala kompetens och mitt trevliga bemötande gör mig till en uppskattad kollega som trivs i teamorienterade miljöer. Jag är övertygad om att en positiv och samarbetsinriktad atmosfär är avgörande för framgång, och jag strävar alltid efter att aktivt bidra till en sådan arbetsmiljö.
+						</p>
+					</article>
+					<article class="info-block">
+						<h3>Erfarenhet</h3>
+						<p>Min bakgrund som skiftledare har gett mig gedigen erfarenhet av ledarskap och effektiv problemlösning. Jag är en lagspelare som värdesätter samarbete och har lätt för att arbeta tillsammans med andra. I min nuvarande roll som konsult på Circle K drar jag nytta av dessa erfarenheter för att framgångsrikt driva projekt inom kundservice, processoptimering och teknologisk innovation. Dessa erfarenheter har stärkt min förmåga att hantera komplexa utmaningar och leverera mätbara resultat inom mitt yrkesområde.
+						</p>
+					</article>
+					<article class="info-block">
+						<h3>Utbildning</h3>
+						<p>
+							Jag studerar till AI-utvecklare vid Jensen Yrkeshögskola, driven av en stark passion för artificiell intelligens och mjukvaruutveckling. Genom en kombination av teoretiska kurser och praktiska projekt fördjupar jag mina kunskaper inom maskininlärning, dataanalys och andra spjutspetsteknologier. Med engagerade lärare och branschexperter som mentorer är jag fast besluten att utvecklas till en skicklig AI-utvecklare och bidra med innovativa lösningar till teknikbranschen.
+						</p>
+					</article>
+				</div>
 			</div>
-			<div class="about-me-h1">
-				<h1 class="h1-about">Erfarenhet</h1>
-				<p class="about-p">Med en bakgrund som tidigare shiftledare har jag utvecklat starka ledarskaps- och
-					problemlösningsfärdigheter. Jag är också en team player och har en förmåga att enkelt samarbeta med
-					andra. I min roll som konsult på Circle K tillämpar jag dessa erfarenheter för att driva projekt
-					inom områden såsom kundservice, processoptimering och teknologisk innovation. Dessa erfarenheter har
-					rustat mig för att möta nya utmaningar och göra betydande framsteg inom mitt yrkesområde.</p>
+		</section>
+
+		<section id="projects" class="section">
+			<div class="container">
+				<h2 class="section-title">Aktuella Projekt</h2>
+				<div class="projects-grid">
+					<article class="project-card">
+						<h3>ZOO</h3>
+						<p>
+							I detta projekt så jobbade jag tillsman med en klasskamerat
+							för att bygga en Zoo hemsida. Sidan är baserad på html,css
+							och använder sig även av javascripts för att får till en
+							slideshow. För att ta en närmare tiit på sidan kan du klicka på gitloggot nedan.
+						</p>
+						<a href="https://github.com/Hayra1/Zoo-project" target="_blank" rel="noopener noreferrer" class="project-card__link">
+							<img class="project-card__icon" src="bilder/gitlogo.png" alt="GitHub Zoo Project">
+						</a>
+					</article>
+					<article class="project-card">
+						<h3>Flask Bokdatabas</h3>
+						<p>I detta projekt så jobbade jag med en flask-baserad webbapplikation som är
+							utformad för att hantera en bokdatabas. Användare kan utföra olika operationer såsom att lägga till,
+							uppdatera och ta bort böcker, samt lämna recensioner för böcker. Applikationen inkluderar också
+							funktioner såsom att söka efter böcker, hämta högst betygsatta böcker och hämta information om
+							författare med hjälp av externa API:er.</p>
+						<a href="https://github.com/Hayra1/Flask" target="_blank" rel="noopener noreferrer" class="project-card__link">
+							<img class="project-card__icon" src="bilder/gitlogo.png" alt="GitHub Flask Project">
+						</a>
+					</article>
+				</div>
 			</div>
-			<div class="about-me-h1" id="main-h1">
-				<h1 class="h1-about">Utbildning</h1>
-				<p class="about-p">
-					Jag studerar AI Developer-programmet vid Jenesn Yrkeshögskola med passion för artificiell
-					intelligens och mjukvaruutveckling. Genom kurser och praktiska projekt utforskar jag områden som
-					maskininlärning och dataanalys för att förvärva avancerade färdigheter. Med stöd från lärare och
-					branschexperter är jag fast besluten att bli en skicklig AI-utvecklare och göra positiva bidrag till
-					teknologibranschen.
-				</p>
+		</section>
 
+		<section id="skills" class="section">
+			<div class="container">
+				<h2 class="section-title">Mina Färdigheter</h2>
+				<div class="skills-list">
+					<div class="skill-item" title="Python">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python" />
+					</div>
+					<div class="skill-item" title="HTML5">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML5" />
+					</div>
+					<div class="skill-item" title="CSS3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3" />
+					</div>
+					<div class="skill-item" title="Pandas">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" alt="Pandas" />
+					</div>
+					<div class="skill-item" title="Jupyter Notebook">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter" />
+					</div>
+					<div class="skill-item" title="Git">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg" alt="Git" />
+					</div>
+					<div class="skill-item" title="VS Code">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" alt="VS Code" />
+					</div>
+					<div class="skill-item" title="SQLite">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite" />
+					</div>
+					<div class="skill-item" title="Flask">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" alt="Flask" />
+					</div>
+					<div class="skill-item" title="Postman">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman" />
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
 
-		<!-----------------About-End---------------------------------------->
-
-
-
-		<!-----------------Projects---------------------------------------->
-
-		<h1 class="main-h11">Aktuella Projekt</h1>
-		<div class="container-project1">
-
-			<div class="project-div" id="Projects">
-				<h1 class="h1-project">ZOO</h1>
-				<p class="project-p">
-					I detta projekt så jobbade jag tillsman med en klasskamerat
-					för att bygga en Zoo hemsida. Sidan är baserad på html,css
-					och använder sig även av javascripts för att får till en
-					slideshow. För att ta en närmare tiit på sidan kan du klicka på gitloggot nedan.
-				</p><span class="git"> <a href="https://github.com/Hayra1/Zoo-project"><img class="gitlogof"
-							src="bilder/gitlogo.png" alt=""></a></span>
+		<section id="contact" class="section">
+			<div class="container">
+				<h2 class="section-title">Intresserad? Kontakta Mig</h2>
+				<form action="https://formspree.io/f/xanojvqd" method="POST" class="contact-form">
+					<div class="form-group">
+						<label for="fname">Namn</label>
+						<input type="text" id="fname" name="firstname" placeholder="Ditt namn.." required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="Din email.." required>
+					</div>
+					<div class="form-group form-group--full-width">
+						<label for="message">Meddelande</label>
+						<textarea id="message" name="message" placeholder="Skriv ditt meddelande.." required></textarea>
+					</div>
+					<div class="form-group form-group--full-width">
+						<button type="submit" class="btn form-submit-btn">Skicka Meddelande</button>
+					</div>
+				</form>
 			</div>
-			<div class="project-div">
-				<h1 class="h1-project" id="hej">Flask</h1>
-				<p class="project-p">I detta projekt så jobbade jag med en flask-baserad webbapplikation som är
-					utformad för att hantera en bokdatabas. Användare kan utföra olika operationer såsom att lägga till,
-					uppdatera och ta bort böcker, samt lämna recensioner för böcker. Applikationen inkluderar också
-					funktioner såsom att söka efter böcker, hämta högst betygsatta böcker och hämta information om
-					författare med hjälp av externa API:er.</p><span class="git"><a href="https://github.com/Hayra1/">
-						</p> <span class="git"> <a href="https://github.com/Hayra1/Flask"><img class="gitlogof"
-									src="bilder/gitlogo.png" alt=""></a></span>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="social-links">
+				<a href="https://github.com/Hayra1" target="_blank" rel="noopener noreferrer" title="GitHub">
+					<img src="bilder/gitlogo.png" alt="GitHub"></a>
+				<a href="https://www.linkedin.com/in/sergey-hayrapetyan-b728b7107/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+					<img src="bilder/Linkedin.png" alt="LinkedIn"></a>
+				<a href="mailto:sergeyhayrapetyan@hotmail.com" title="Email">
+					<img src="bilder/gmail.png" alt="Email"></a>
 			</div>
-		</div>
-		<!----------------Projects-End---------------------------------------->
-
-		<h1 class="main-h11">Mina färdigheter</h1>
-
-		<div class="container-skills1" id="skills">
-			<div class="skills-div">
-				
-				<img
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
-
-				<img
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-
-				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-
-				<img
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
-
-				<img
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" />
-
-
-				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg" />
-
-				<img
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
-
-				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" />
-
-				<img
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" />
-
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
-          
+			<div class="footer-cv-btn">
+				<a href="CV.AI.pdf" download target="_blank" class="btn btn--outline">Ladda ner mitt CV</a>
 			</div>
-		</div>
-
-
-		<!------------------References-Start------------------------------------------------>
-		<h1 class="refrence-h1" id="ref">Referencer</h1>
-		<div class="refrence">
-			<div>
-				<h5>Elina Hägerström</h5>
-				<p>Sergey har varit en värdefull medarbetare hos oss på Leos Lekland. Han arbetade här för några år
-					sedan,
-					och vi uppskattade den tid han spenderade med oss.
-				</p>
-			</div>
-			<div>
-				<h5>Smilla Liden</h5>
-				<p>Att jobba som konsult på Circle K är inget lätt arbete, det kräver flexibilitet och
-					anpassningsförmåga.
-					Sergey är inte bara en person som identifierar utmaningar utan också tar initiativ för att hitta
-					lösningar på dem. Han är en mycket social och trevlig kille.
-				</p>
-			</div>
-			<div>
-				<h5>Simon Hayrapetyan</h5>
-				<p>
-					Jag har varit Sergeys arbetsledare inom byggbranschen. Han är snabbtänkt och har hög social
-					kompetens.
-					Kundservice är något som han kan hantera tack vare sin goda kommunikationsförmåga.
-				</p>
-			</div>
-
-
-		</div>
-	<!---------------------References-End-------------------------------------------------->
-
-	<!----------------Contact----------------------------------------->
-	<h1 class="main-h11" id="h1-contact">Intreserad? Kontakta mig </h1>
-	<div class="arrow"><img class="arrowpic" src="bilder/arrow.png" alt="arrow"></div>
-
-
-	<div class="container-form1">
-		<div class="firstname1" id="firstname">
-			<form action="https://http-echo-server.azurewebsites.net/api/httpEchoDemo">
-				<label for="fname">Namn <span><img class="arrow-form1" src="bilder/arrow.png" alt=""></span></label>
-				<input class="inputforme1" type="text" id="fname" name="firstname" placeholder="Ditt namn..">
-		</div>
-		<div class="firstname1" id="lastname">
-			<label for="lname">Meddelande<span><img class="arrow-form1" src="bilder/arrow.png" alt=""></span>
-			</label>
-			<input class="inputforme1" type="text" id="lname" name="lastname" placeholder="Skriv ditt meddelande..">
-
-		</div>
-
-
-		<div class="email1">
-			<label for="email">Email <span><img class="arrow-form1" src="bilder/arrow.png" alt=""></span> </label>
-			<input class="inputforme1" type="email" id="email" name="email" placeholder="Din email.." required>
-		</div>
-
-
-
-		<input class="btn-submit2 btn-cv" type="submit" value="Submit">
-
-
-
-
-		</form>
-	</div>
-
-	<!----------------Contact-End---------------------------------------->
-
-
-
-	<!-----------------------------Footer-start------------------------------------->
-
-	<footer>
-		<div class="social-media">
-			<a href="https://github.com/Hayra1?tab=overview&from=2024-03-01&to=2024-03-25">
-				<img class="gitlogo-footer" src="bilder/gitlogo.png" alt="gitlogo"></a>
-
-			<a href="https://www.linkedin.com/in/sergey-hayrapetyan-b728b7107/"><img class="gitlogo-footer"
-					src="bilder/Linkedin.png" alt="linkedinlogo"></a>
-			<a href="sergeyhayrapetyanhotmail.com"><img class="gitlogo-footer" src="bilder/gmail.png" alt=""></a>
-		</div>
-
-		<div class="cv-footer " id="Contact">
-			<button class="btn-contact btn-cv"><a class="download-cv" href="CV.AI.pdf" download=""
-					target="_blank">Ladda ner mitt CV</a></a></button>
+			<p class="copyright">&copy; <span id="currentYear"></span> Sergey Hayrapetyan. Alla rättigheter förbehållna.</p>
 		</div>
 	</footer>
 
-	<!-----------------------------Footer-End------------------------------------->
-
-
-
-	</div>
-</div>
-
-
+	<script>
+		document.getElementById('currentYear').textContent = new Date().getFullYear();
+	</script>
 </body>
-
 </html>
